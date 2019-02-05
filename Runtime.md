@@ -14,6 +14,6 @@ It's not convenient to work with byte blobs directly though, it's more desired t
 
 This is so common so we have a special macro for that: [`impl_stubs!`](impl_stubs). It lets you write entrypoint functions as if they really take high-level objects while in reality they just deserialize from and serialize these object to byte blobs.
 
-Runtime defines what data is [stored on the chain](decl_storage), how [extrinsics](Extrinsic) are interpreted and how state transitions are performed.
+Runtime defines what data is [stored on the chain](decl_storage), how [extrinsics](Extrinsic.md) are interpreted and how state transitions are performed.
 
 In this repository, you'll find tools for creating runtimes, but they are only for convenience and do not have to be used as long as the basic requirement that a runtime provides certain entry points are met.
